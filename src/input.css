@@ -1,1 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,800;1,800&display=swap');
+
 @import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Manrope', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-gray-700);
+
+  /* --color-*: initial; */
+
+  --color-brand-primary: oklch(0.5854 0.2041 277.12);
+
+  --color-grad2: oklch(0.6056 0.2189 292.72);
+
+  --color-grad3: oklch(0.6668 0.2591 322.15);
+
+  --color-hero-bg: #6366f1;
+  --color-hero-bg2: #da46ef;
+  --color-hero-bg3: #f1f4fd;
+
+  --color-white: oklch(100% 0 0);
+
+  --color-gray-900: oklch(16.95% 0.022 267.28);
+  --color-gray-800: oklch(33.79% 0.0422 280.2);
+  --color-gray-700: oklch(47.15% 0.0421 279.52);
+  --color-gray-600: oklch(68.05% 0.0326 277.36);
+  --color-gray-500: oklch(78.27% 0.0256 278.29);
+  --color-gray-400: oklch(88.1% 0.0194 276.36);
+  --color-gray-300: oklch(92.31% 0.0165 274.86);
+  --color-gray-200: oklch(96.18% 0.0137 272.74);
+  --color-gray-100: oklch(97.35% 0.0124 271.29);
+
+  --color-system-error: oklch(63.69% 0.2079 25.33);
+  --color-system-success: oklch(72.27% 0.192 149.58);
+  --color-system-warning: oklch(83.1% 0.1705 81.36);
+  --color-system-info: oklch(62.98% 0.1838 263.31);
+
+  --tw-brand-shadow: 0 8px 18px -8px oklch(0.5854 0.2041 277.12/0.9);
+  --tw-secondary-btn-shadow: 0 8px 18px -8px oklch(0.187 0.0361 290.1/0.15);
+  --tw-large-shadow: 0 4.8px 24.4px -6px oklch(0.187 0.0361 290.1/0.1),
+    0 4px 13px -2px oklch(0.187 0.0361 290.1/0.06);
+
+  --tw-medium-shadow: 0 4.4px 20px -1px oklch(0.187 0.0361 290.1/0.05),
+    0 4px 9px -1px oklch(0.187 0.0361 290.1/0.03);
+
+  --tw-small-shadow: 0 4.4px 12px -1px oklch(0.187 0.0361 290.1/0.06),
+    0 2px 6.4px -1px oklch(0.187 0.0361 290.1/0.03);
+}
+
+.dark {
+  --color-background: var(--color-gray-600);
+  --foreground: var(--color-gray-100);
+}
+
+:root {
+}
+
+@layer utilities {
+  .button-large-solid {
+    @apply text-[1rem] font-semibold px-[2rem] py-[13px] bg-brand-primary gap-2 text-white rounded-lg;
+  }
+  .button-medium-solid {
+    @apply text-[1rem] font-semibold px-[28px] py-[13px] bg-brand-primary gap-2 text-white rounded-lg;
+  }
+
+  .radial-hero-bg {
+    @apply bg-radial from-hero-bg/10 via-hero-bg2/5 to-hero-bg3/7;
+  }
+
+  .brand-shadow {
+    @apply shadow-[var(--tw-brand-shadow)];
+  }
+
+  .secondary-btn-shadow {
+    @apply shadow-[var(--tw-secondary-btn-shadow)];
+  }
+
+  .large-shadow {
+    @apply shadow-[var(--tw-large-shadow)];
+  }
+
+  .medium-shadow {
+    @apply shadow-[var(--tw-medium-shadow)];
+  }
+
+  .small-shadow {
+    @apply shadow-[var(--tw-small-shadow)];
+  }
+}

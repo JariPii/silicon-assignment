@@ -1,1 +1,1 @@
-"# silicon-assignment" 
+# silicon-assignment
