@@ -57,9 +57,6 @@
   --foreground: var(--color-gray-100);
 }
 
-:root {
-}
-
 @layer utilities {
   .button-large-solid {
     @apply text-[1rem] font-semibold px-[2rem] py-[13px] bg-brand-primary gap-2 text-white rounded-lg;
