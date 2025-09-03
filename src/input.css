@@ -19,9 +19,9 @@
 
   --color-grad3: oklch(0.6668 0.2591 322.15);
 
-  --color-hero-bg: #6366f1;
-  --color-hero-bg2: #da46ef;
-  --color-hero-bg3: #f1f4fd;
+  --color-hero-bg: oklch(0.5854 0.2041 277.12);
+  --color-hero-bg2: oklch(0.6681 0.2595 322.43);
+  --color-hero-bg3: oklch(0.9675 0.0124 271.29);
 
   --color-white: oklch(100% 0 0);
 
@@ -65,8 +65,11 @@
     @apply text-[1rem] font-semibold px-[28px] py-[13px] bg-brand-primary gap-2 text-white rounded-lg;
   }
 
-  .radial-hero-bg {
+  /* .radial-hero-bg {
     @apply bg-radial from-hero-bg/10 via-hero-bg2/5 to-hero-bg3/7;
+  } */
+  .radial-hero-bg {
+    @apply bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%";
   }
 
   .brand-shadow {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center items-center flex-col">
+    <header class="w-full flex justify-center h-[52px] lg:h-[76px]">
+      <div
+        class="flex items-center justify-between w-full p-4 xl:p-0 silicon-max-width"
+      >
+        <img src="../public/images/brand-logos/solid_logo.svg" alt="" />
+
+        <div class="flex items-center gap-4">
+          <p class="hidden md:block">Dark Mode</p>
+
+          <div class="bg-gray-600 rounded-full w-12 h-6">
+            <img src="../public/images/circle.svg" alt="" />
+          </div>
+
+          <div class="menu lg:hidden">
+            <img src="../public/images/horizontal-divider.svg" alt="" />
+          </div>
+
+          <div class="hidden lg:block">
+            <button
+              class="bg-brand-primary rounded-sm text-white py-2 px-5 flex items-center justify-center gap-2"
+            >
+              <img src="../public/images/icons/avatar.svg" alt="" />
+              Sign in / up
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MARK: Hero Section -->
+
+    <section
+      class="bg-radial-[at_50%_75%] from-hero-bg/10 via-hero-bg2/5 to-hero-bg3/[7%] to-100% flex items-center justify-center flex-col md:flex-row gap-6 p-2 border-2 h-[60svh] xl:h-[80svh] w-full relative"
+    >
+      <div
+        class="bg-amber-200 h-full flex items-center flex-col justify-around"
+      >
+        <div class="md:absolute">
+          <h2 class="text-4xl font-extrabold text-center">
+            Manage All Your Money in One App
+          </h2>
+        </div>
+        <!-- Description and store-btns -->
+
+        <p class="text-lg font-normal text-gray-700 text-center leading-7">
+          We offer you a new generation of the mobile banking. Save, spend &
+          manage money in your pocket.
+        </p>
+
+        <!-- Store buttons -->
+
+        <div
+          class="bg-gray-900 rounded-lg flex items-center justify-center py-2 w-full"
+        >
+          <img src="../public/images/appstore-light-svg.svg" alt="" />
+        </div>
+
+        <div
+          class="bg-gray-900 rounded-lg flex items-center justify-center py-2 w-full"
+        >
+          <img src="../public/images/googleplay-light-svg.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="hidden md:block">
+        <img src="../public/images/iphones.svg" alt="" class="" />
+      </div>
+    </section>
+  </body>
+</html>
